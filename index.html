@@ -18,7 +18,7 @@
 						</a>
 
 						<ul class="nav">
-							<li><a class="brand" href="#">Informationsportal der Universit&auml;t Bamberg</a></li>
+							<li><a href="#">Informationsportal der Universit&auml;t Bamberg</a></li>
 						</ul>
 
 						<ul class="nav pull-right hidden-desktop">
@@ -31,22 +31,105 @@
 			</div>
 			<div id="preMainOverlay">
 				<div id="mainContent">
+
+					<!-- Top Navigation -->
 					<ul class="nav nav-tabs" id="tabbedSearch">
 				        <li class="active"><a href="#schedule">Stundeplan</a></li>
 				        <li><a href="#events">Aktuelle Veranstaltungen</a></li>
 				        <li><a href="#freeRoom">Raumsuche</a></li>
 					</ul>
 					
+					
 					<div class="tab-content page">
+						
+						<!-- Stundenplan -->
 						<div class="tab-pane fade in active" id="schedule">
-							<h1 class="headline">Stundenplan</h1>
+
+							<div class="container-fluid">
+							  <div class="row-fluid">
+							    <div class="span5">
+							    	<h2 class="headline">Studieng&auml;nge</h2>
+							    	<div class="input-append">
+
+										  <button class="btn btn-info" >Bachelor <i class="icon-ok icon-white"></i></button>
+										  <button class="btn btn-success" >Master <i class="icon-ok icon-white"></i></button>
+										  <button class="btn btn-warning" >Lehramt <i class="icon-remove icon-white"></i></button>
+									</div>
+									<form class="form-search" style="margin: 0 0 5px">
+									  <div class="input-append">
+									    <input type="text" class="span12 search-query">
+									    <button type="submit" class="btn"><i class="icon-search icon"></i> finden</button>
+									  </div>
+									</form>
+							    	
+									<table class="table table-striped">
+									    <tbody>
+									    <tr class="info">
+									        <td colspan="2" style="text-align: center;background-color: rgba(82,184,214,0.15);color: white;">Bachelor</td>
+									    </tr>
+									    <tr>
+									        <td>Allgemeine Sprachwissenschaft</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Angewandte Informatik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Anglistik/Amerikanistik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Allgemeine Sprachwissenschaft</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Angewandte Informatik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Anglistik/Amerikanistik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr class="success">
+									        <td colspan="2" style="text-align: center;rgba(95, 190, 95,0.15);color: white;">Master</td>
+									    </tr>
+									    <tr>
+									        <td>Allgemeine Sprachwissenschaft</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Angewandte Informatik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td>Anglistik/Amerikanistik</td>
+									        <td><button class="btn" >ausw&auml;hlen <i class="icon-play-circle"></i></button></td>
+									    </tr>
+									    </tbody>
+									</table>
+							    </div>
+							    <div class="span7">
+							    	<h2>Dein Stundenplan</h2>
+							    	<div class="container-fluid">
+							    		<div class="well" style="min-height: 550px;background-color: rgb(255, 252, 239)">
+							    			
+							    		</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+
 						</div>
+
+						<!-- Stundenplan -->
 						<div class="tab-pane fade in" id="events">
 							<h1 class="headline">Aktuelle Veranstaltungen</h1>
 						</div>
-						
+
+						<!-- Raumsuche -->
 						<div class="tab-pane fade in" id="freeRoom">
-							<h1 class="headline"></h1>
+							
 
 							<div class="searchContainer">
 								<div class="subContainer">
@@ -99,7 +182,7 @@
 										</fieldset>
 									
 									<div class="submitSearchContainer">
-										<input onclick="startAjaxRequest(true, &#39;freeRoom_&#39;);jQuery.ajax({type:&#39;POST&#39;,data:jQuery(this).parents(&#39;form:first&#39;).serialize(), url:&#39;/search/ajaxSearch&#39;,success:function(data,textStatus){jQuery(&#39;#freeRoom_hiddensearchresults&#39;).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults(&#39;freeRoom_&#39;)}});return false" type="button" value="Raumsuche jetzt starten" id="freeRoom_submitRoomSearch" class="btn btn-primary btn-large">
+										<input onclick="return false" type="button" value="Raumsuche jetzt starten" id="freeRoom_submitRoomSearch" class="btn btn-primary btn-large">
 									</div>
 								</form>
 								</div>
