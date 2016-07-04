@@ -53,3 +53,10 @@
     color: rgba(0, 0, 0, 0.50);
 }
 
+#tg-MUT9V{
+	margin-top: 18px;
+}
+
+#tg-MUT9V tr th{
+	white-space: nowrap;
+}
