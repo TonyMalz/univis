@@ -1,5 +1,6 @@
 .cal td, th {
 	border: 1px solid rgb(236, 227, 227);
+	min-width: 75px;
 }
 
 .cal th {
@@ -26,6 +27,7 @@
 	top: -11px;
     right: -8px;
     display: none;
+    cursor: pointer;
 }
 .info_icon {
 	position: absolute;

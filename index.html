@@ -52,7 +52,7 @@
 									</div>
 									<form class="form-search" style="margin: 0 0 5px">
 									  <div class="input-append">
-									    <input type="text" class="span12 search-query">
+									    <input type="text" class="span12 search-query" style="width: 315px">
 									    <button type="submit" class="btn"><i class="icon-search icon"></i> finden</button>
 									  </div>
 									</form>
@@ -124,7 +124,8 @@
 										        		<span class="course">AUD</span><br>
 										        		<span class="location">Vorlesung <br> WE 01.019</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
-										        		<div class="info_icon"><i class="icon-info-sign"></i></div>
+										        		<div class="info_icon"><a href="javascript:return false;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Henrich <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
 										        	</div>
 										        </td>
 										        <td></td>
@@ -133,7 +134,8 @@
 										        		<span class="course">GTI</span><br>
 										        		<span class="location">Vorlesung <br> WE 01.019</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png" alt="Kurs entfernen"></div>
-										        		<div class="info_icon"><i class="icon-info-sign"></i></div>
+										        		<div class="info_icon"><a href="javascript:return false;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Mendler <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
 										        	</div></td>
 										        <td></td>
 										    </tr>
@@ -152,7 +154,8 @@
 										        		<span class="course">MFI 1</span><br>
 										        		<span class="location">Vorlesung <br> WE 01.019</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
-										        		<div class="info_icon"><i class="icon-info-sign"></i></div>
+										        		<div class="info_icon"><a href="javascript:return false;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Mendler <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
 										        	</div></td>
 										        <td></td>
 										        <td></td>
@@ -174,7 +177,8 @@
 										        		<span class="course">AUD</span><br>
 										        		<span class="location">&Uuml;bung <br> WE 03.023</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
-										        		<div class="info_icon"><i class="icon-info-sign"></i></div>
+										        		<div class="info_icon"><a href="javascript:return false;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Hans Dampf <br>&Uuml;bungsgruppe: 1 <br><hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
 										        	</div></td>
 										        <td></td>
 										        <td></td>
@@ -321,6 +325,17 @@
   			$(this).find('.delete_icon').hide();
 		}
 		);
+
+		$('table button').click(function (e) {
+  			window.location = "index2.html";
+		});
+
+
+    	$('[data-toggle="popover"]').popover();
+
+    	$('.delete_icon').click(function (e) {
+  			$(this).parent().fadeOut();
+		});
 		
 	</script>
 </body>
