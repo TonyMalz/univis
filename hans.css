@@ -60,7 +60,9 @@
 #tg-MUT9V{
 	margin-top: 18px;
 }
-
+#tg-MUT9V th{
+	cursor: pointer;
+}
 #tg-MUT9V tr th{
 	white-space: nowrap;
 }
