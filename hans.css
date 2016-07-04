@@ -56,3 +56,11 @@
 .succwell {
 	background: #ceff5d61;
 }
+
+#tg-MUT9V{
+	margin-top: 18px;
+}
+
+#tg-MUT9V tr th{
+	white-space: nowrap;
+}
