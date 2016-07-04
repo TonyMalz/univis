@@ -16,9 +16,9 @@
 	border: 1px solid rgba(0, 0, 0, 0.28);
     border-radius: 5px;
 
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     position: relative;
 }
 
@@ -53,3 +53,6 @@
     color: rgba(0, 0, 0, 0.50);
 }
 
+.succwell {
+	background: #ceff5d61;
+}
