@@ -66,3 +66,12 @@
 #tg-MUT9V tr th{
 	white-space: nowrap;
 }
+
+
+.modulbtn {
+	min-width: 120px;
+}
+
+.modulshort {
+	color: rgba(0,0,0,0.3);
+}

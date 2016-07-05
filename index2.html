@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>Univis Bamberg</title>
+	<meta name="viewport" content="initial-scale = 1.0">
+	<script src="include/jquery-1.8.0.min.js" type="text/javascript"></script>
+	<link href="include/bundle-roofis-ui_head.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<link href="hans.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<script src="include/bundle-roofis-ui_head.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="topbg">
+		<div class="container">
+		 	<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</a>
+
+						<ul class="nav">
+							<li><a href="#">Informationsportal der Universit&auml;t Bamberg</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="preMainOverlay">
+				<div id="mainContent">
+
+					<!-- Top Navigation -->
+					<ul class="nav nav-tabs" id="tabbedSearch">
+				        <li class="active"><a href="#schedule">Stundeplan</a></li>
+				        <li><a href="#events">Aktuelle Veranstaltungen</a></li>
+				        <li><a href="#freeRoom">Raumsuche</a></li>
+					</ul>
+					
+					
+					<div class="tab-content page">
+						
+						<!-- Stundenplan -->
+						<div class="tab-pane fade in active" id="schedule">
+							<ul class="breadcrumb">
+							  <li><a href="index.html">Stundenplan</a> <span class="divider">/</span></li>
+							  <li><a href="index.html">Bachelor</a> <span class="divider">/</span></li>
+							  <li class="active">Angewandte Informatik</li>
+							</ul>
+							<div class="container-fluid">
+							  <div class="row-fluid">
+							    <div class="span5">
+							    	<h2 class="headline">Modulauswahl</h2>
+							    
+									<form class="form-search" style="margin: 0 0 5px">
+									  <div class="input-append">
+									    <input type="text" class="span12 search-query" style="width: 315px">
+									    <button type="submit" class="btn"><i class="icon-search icon"></i> finden</button>
+									  </div>
+									</form>
+							    	
+									<table class="table table-striped">
+									    <tbody>
+									    <!-- <tr class="info">
+									        <td colspan="2" style="text-align: center;background-color: rgba(82,184,214,0.15);color: white;">Bachelor</td>
+									    </tr> -->
+									    <tr>
+									        <td><span class="modulshort">(A1)</span> Mathematische Grundlagen </td>
+									        <td><button class="btn modulbtn" >5 Module <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td><span class="modulshort">(A2)</span> Informatik </td>
+									        <td><button class="btn modulbtn" >18 Module <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td><span class="modulshort">(A3)</span> Angewandte Informatik </td>
+									        <td><button class="btn modulbtn" >17 Module <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td><span class="modulshort">(A4)</span> Anwendungsfächer </td>
+									        <td><button class="btn modulbtn" >22 F&auml;cher <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td><span class="modulshort">(A5)</span> Kontextstudium </td>
+									        <td><button class="btn modulbtn" >8 Module <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    <tr>
+									        <td><span class="modulshort">(A6)</span> Seminare und Projekte </td>
+									        <td><button class="btn modulbtn" >12 Module <i class="icon-chevron-down"></i></button></td>
+									    </tr>
+									    </tbody>
+									</table>
+							    </div>
+							    <div class="span7">
+							    	<h2>Dein Stundenplan</h2>
+							    	<div class="container-fluid">
+							    		<div class="well" style="min-height: 500px;background-color: rgba(255, 252, 239,0.2)">
+								    		<table class="table table-striped cal">
+										    <tr>
+										    	<th></th>
+										    	<th>Mo</th>
+										    	<th>Di</th>
+										    	<th>Mi</th>
+										    	<th>Do</th>
+										    	<th>Fr</th>
+										    </tr>
+										    <tr>
+										        <td class="caltime">08<sup>15</sup> - 09<sup>45</sup></td>
+										        <td>
+										        	<div class="entry c3">
+										        		<span class="course">AUD</span><br>
+										        		<span class="location">Vorlesung <br> WE 01.019</span>
+										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
+										        		<div class="info_icon"><a href="javascript:;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Henrich <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
+										        	</div>
+										        </td>
+										        <td></td>
+										        <td></td>
+										        <td><div class="entry c2">
+										        		<span class="course">GTI</span><br>
+										        		<span class="location">Vorlesung <br> WE 01.019</span>
+										        		<div class="delete_icon"><img src="include/images/delete1.png" alt="Kurs entfernen"></div>
+										        		<div class="info_icon"><a href="javascript:;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Mendler <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
+										        	</div></td>
+										        <td></td>
+										    </tr>
+										    <tr>
+										        <td class="caltime">10<sup>15</sup> - 11<sup>45</sup></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										    </tr>
+										    <tr>
+										        <td class="caltime">12<sup>15</sup> - 13<sup>45</sup></td>
+										        <td></td>
+										        <td><div class="entry c1">
+										        		<span class="course">MFI 1</span><br>
+										        		<span class="location">Vorlesung <br> WE 01.019</span>
+										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
+										        		<div class="info_icon"><a href="javascript:;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Prof. Dr. Mendler <br>ECTS: 6 <br>Empfohlenes Fachsemester: 2 <hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
+										        	</div></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										    </tr>
+										    <tr>
+										        <td class="caltime">14<sup>15</sup> - 15<sup>45</sup></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										    </tr>
+										    <tr>
+										        <td class="caltime">16<sup>15</sup> - 17<sup>45</sup></td>
+										        <td></td>
+										        <td></td>
+										        <td><div class="entry c3">
+										        		<span class="course">AUD</span><br>
+										        		<span class="location">&Uuml;bung <br> WE 03.023</span>
+										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
+										        		<div class="info_icon"><a href="javascript:;" data-toggle="popover" data-trigger="focus" title="Algorithmen & Datenstrukturen"  data-content="Dozent: Hans Dampf <br>&Uuml;bungsgruppe: 1 <br><hr> Hier lernt man Sortieren, wie B&auml;ume wachsen und Graphen regieren...[<a href='#'>mehr</a>]"><i class="icon-info-sign"></i></a>
+										        		</div>
+										        	</div></td>
+										        <td></td>
+										        <td></td>
+										    </tr>
+										    <tr>
+										        <td class="caltime">18<sup>15</sup> - 19<sup>45</sup></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										        <td></td>
+										    </tr>
+										    </table>
+										    <div class="row-fluid">
+
+										    	<div class="offset4">
+										    		<div class="btn-toolbar">
+													  	<div class="btn-group">
+													    <a id="share_link" class="btn" href="javascript:;" data-toggle="popover" data-placement="top"  title="Stundenplan mit anderen teilen"  data-content="<div class='well well-small succwell'>http://dubi.de/23hd3</div><button class='btn btn-info' id='copy_link' >Link in Zwischenablage kopieren <i class='icon-ok icon-white' style='display:none'></i></button><hr> Sende den obigen Link einfach einer Freundin oder Freund, welche(r) diesen dann als eigene Vorlage verwenden kann."><i class="icon-share"></i> Teilen</a>
+													    <a class="btn" href="#"><i class="icon-book"></i> PDF</a>
+													    <a class="btn" href="#"><i class="icon-print"></i> Drucken</a>
+													    <a class="btn" href="#"><i class="icon-picture"></i> Bild</a>
+														</div>
+										    		</div>
+												</div>
+										    </div>
+									    	
+							    		</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+
+						</div>
+
+						<!-- Veranstaltungen -->
+						<div class="tab-pane fade in" id="events">
+							<div class="container-fluid">
+								<div class="well" style="background-color: rgba(255, 252, 239,0.2)">
+									<form class="form-search" style="margin: 0 0 5px">
+									  <div class="input-append">
+									    <input type="text" class="span12 search-query" style="width: 315px">
+									    <button type="submit" class="btn"><i class="icon-search icon"></i> finden</button>
+									  </div>
+									</form>
+									<table id="tg-MUT9V" class="table table-striped">
+									  <tr>
+									    <th>Tag ▼</th>
+									    <th>Datum ▲</th>
+									    <th>Zeit ▼</th>
+									    <th>Titel ▼</th>
+									    <th>Ort ▼</th>
+									    <th>Veranstalter ▼</th>
+									    <th>mehr</th>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016<br></td>
+									    <td>17:00 - 22:00 Uhr</td>
+									    <td>Bamberg Buddies' Independence Day Barbecue</td>
+									    <td>Hainstr 41-43</td>
+									    <td>Professur für Amerikanistik</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016</td>
+									    <td>18:00 - 20:00 Uhr</td>
+									    <td>Hochschulöffentliches Gespräch mit dem Mittelbau</td>
+									    <td>MG2/01.10</td>
+									    <td>Universitätsleitung</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016</td>
+									    <td>18:15 - 20:00 Uhr</td>
+									    <td>Vortrag Prof. Roy Baumeister (Florida State University, Tallahasseee) - "After 18.000 studies, what good is self-esteem?"</td>
+									    <td>M3N/02.32</td>
+									    <td>Prof. Dr. Astrid Schütz</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016</td>
+									    <td>19:30 - 22:00 Uhr</td>
+									    <td>Ringvorlesung des Zentrums für Mittelalterstudien im Sommersemester 2016</td>
+									    <td>U2/00.25</td>
+									    <td>Zentrum für Mittelalterstudien</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016</td>
+									    <td>20:00 - 22:00 Uhr</td>
+									    <td>Land und Erlösung/Die israelische Besatzung im Vergleich; Vortrag Prof. Dr. Johannes Becke (HfJS Heidelberg),</td>
+									    <td>U2/01.33</td>
+									    <td>Professur für Judaistik, Hillel</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Montag</td>
+									    <td>4.7.2016</td>
+									    <td>20:00 - 22:00 Uhr</td>
+									    <td>Wöchentliche Sitzung MARKET TEAM e.V.</td>
+									    <td>F21/02.18</td>
+									    <td>Market Team Bamberg e. V.</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>11:00- 13:00 Uhr</td>
+									    <td>Informationsveranstaltung: Die Sozial-, Wirtschafts- und Geisteswissenschaften in Horizont 2020 Themen, Beteiligungsmöglichkeiten und Interdisziplinarität</td>
+									    <td></td>
+									    <td>Z/FFT</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>18:00 - 21:00 Uhr</td>
+									    <td>Vortrag Dr. Wolfgang Kraushaar - "Wilfried Böse und die Flugzeugentführung nach Entebbe 1976"</td>
+									    <td>U2/00.25</td>
+									    <td>Lehrstuhl für Neuere und Neueste Geschichte, Otto-Friedrich-Universität Bamberg</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>18:00 - 20:00 Uhr</td>
+									    <td>Mein erster Arbeitsvertrag</td>
+									    <td>MG2 Raum 01.10</td>
+									    <td>Zentrale Studienberatung</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>18:30 - 21:30 Uhr</td>
+									    <td>Debatte - Debattierclub Bamberg</td>
+									    <td>MG1/01.02</td>
+									    <td>Debattierclub Bamberg</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>19:00 - 21:00 Uhr</td>
+									    <td>Gastvortrag der Lehrstühle für Kunstgeschichte</td>
+									    <td>U5/01.22</td>
+									    <td>Lehrstuhl für Kunstgeschichte, insb. für Neuere u. Neueste Kunstgeschichte</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>19:15 - 21:00 Uhr</td>
+									    <td>Vortrag URSULA MOSER, Innsbruck: "Librettoforschung - Textmusikforschung: Gedanken zu kommunizierenden Gefäßen"</td>
+									    <td>U5/01.18</td>
+									    <td>Professur für Romanische Literaturwissenschaft</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Dienstag</td>
+									    <td>5.7.2016</td>
+									    <td>20:00 - 22:00 Uhr</td>
+									    <td>Lesung mit Jenny Erpenbeck</td>
+									    <td>U7/01.05</td>
+									    <td>Lehrstuhl für Neuere deutsche Literaturwissenschaft</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Mittwoch</td>
+									    <td>6.7.2016</td>
+									    <td>14:00 - 16:00 Uhr</td>
+									    <td>Gastvortrag Prof. Dr. Marcia Pally (New York University / Humboldt-Universität zu Berlin): "Why America doesn't know what to do with its own government: Trump, Sanders, and frankly, everyone else"</td>
+									    <td>U2/01.33</td>
+									    <td>Professur für Amerikanistik</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Mittwoch</td>
+									    <td>6.7.2016</td>
+									    <td>18:00 - 20:00 Uhr</td>
+									    <td>Update Theologie</td>
+									    <td>U2/00.25</td>
+									    <td>Institut Katholische Theologie</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									  <tr>
+									    <td>Mittwoch</td>
+									    <td>6.7.2016</td>
+									    <td>18:00 - 21:00 Uhr</td>
+									    <td>NMUN Informationsveranstaltung</td>
+									    <td>F21/03.01</td>
+									    <td>Internationale Beziehungen</td>
+									    <td><i class="icon-info-sign"></i></td>
+									  </tr>
+									</table>
+									<script type="text/javascript" charset="utf-8">var TgTableSort=window.TgTableSort||function(n,t){"use strict";function r(n,t){for(var e=[],o=n.childNodes,i=0;i<o.length;++i){var u=o[i];if("."==t.substring(0,1)){var a=t.substring(1);f(u,a)&&e.push(u)}else u.nodeName.toLowerCase()==t&&e.push(u);var c=r(u,t);e=e.concat(c)}return e}function e(n,t){var e=[],o=r(n,"tr");return o.forEach(function(n){var o=r(n,"td");t>=0&&t<o.length&&e.push(o[t])}),e}function o(n){return n.textContent||n.innerText||""}function i(n){return n.innerHTML||""}function u(n,t){var r=e(n,t);return r.map(o)}function a(n,t){var r=e(n,t);return r.map(i)}function c(n){var t=n.className||"";return t.match(/\S+/g)||[]}function f(n,t){return-1!=c(n).indexOf(t)}function s(n,t){f(n,t)||(n.className+=" "+t)}function d(n,t){if(f(n,t)){var r=c(n),e=r.indexOf(t);r.splice(e,1),n.className=r.join(" ")}}function v(n){d(n,L),d(n,E)}function l(n,t,e){r(n,"."+E).map(v),r(n,"."+L).map(v),e==T?s(t,E):s(t,L)}function g(n){return function(t,r){var e=n*t.str.localeCompare(r.str);return 0==e&&(e=t.index-r.index),e}}function h(n){return function(t,r){var e=+t.str,o=+r.str;return e==o?t.index-r.index:n*(e-o)}}function m(n,t,r){var e=u(n,t),o=e.map(function(n,t){return{str:n,index:t}}),i=e&&-1==e.map(isNaN).indexOf(!0),a=i?h(r):g(r);return o.sort(a),o.map(function(n){return n.index})}function p(n,t,r,o){for(var i=f(o,E)?N:T,u=m(n,r,i),c=0;t>c;++c){var s=e(n,c),d=a(n,c);s.forEach(function(n,t){n.innerHTML=d[u[t]]})}l(n,o,i)}function x(n,t){var r=t.length;t.forEach(function(t,e){t.addEventListener("click",function(){p(n,r,e,t)}),s(t,"tg-sort-header")})}var T=1,N=-1,E="tg-sort-asc",L="tg-sort-desc";return function(t){var e=n.getElementById(t),o=r(e,"tr"),i=o.length>0?r(o[0],"td"):[];0==i.length&&(i=r(o[0],"th"));for(var u=1;u<o.length;++u){var a=r(o[u],"td");if(a.length!=i.length)return}x(e,i)}}(document);document.addEventListener("DOMContentLoaded",function(n){TgTableSort("tg-MUT9V")});
+									</script>
+									<script type="text/javascript" charset="utf-8">var TgTableSort=window.TgTableSort||function(n,t){"use strict";function r(n,t){for(var e=[],o=n.childNodes,i=0;i<o.length;++i){var u=o[i];if("."==t.substring(0,1)){var a=t.substring(1);f(u,a)&&e.push(u)}else u.nodeName.toLowerCase()==t&&e.push(u);var c=r(u,t);e=e.concat(c)}return e}function e(n,t){var e=[],o=r(n,"tr");return o.forEach(function(n){var o=r(n,"td");t>=0&&t<o.length&&e.push(o[t])}),e}function o(n){return n.textContent||n.innerText||""}function i(n){return n.innerHTML||""}function u(n,t){var r=e(n,t);return r.map(o)}function a(n,t){var r=e(n,t);return r.map(i)}function c(n){var t=n.className||"";return t.match(/\S+/g)||[]}function f(n,t){return-1!=c(n).indexOf(t)}function s(n,t){f(n,t)||(n.className+=" "+t)}function d(n,t){if(f(n,t)){var r=c(n),e=r.indexOf(t);r.splice(e,1),n.className=r.join(" ")}}function v(n){d(n,L),d(n,E)}function l(n,t,e){r(n,"."+E).map(v),r(n,"."+L).map(v),e==T?s(t,E):s(t,L)}function g(n){return function(t,r){var e=n*t.str.localeCompare(r.str);return 0==e&&(e=t.index-r.index),e}}function h(n){return function(t,r){var e=+t.str,o=+r.str;return e==o?t.index-r.index:n*(e-o)}}function m(n,t,r){var e=u(n,t),o=e.map(function(n,t){return{str:n,index:t}}),i=e&&-1==e.map(isNaN).indexOf(!0),a=i?h(r):g(r);return o.sort(a),o.map(function(n){return n.index})}function p(n,t,r,o){for(var i=f(o,E)?N:T,u=m(n,r,i),c=0;t>c;++c){var s=e(n,c),d=a(n,c);s.forEach(function(n,t){n.innerHTML=d[u[t]]})}l(n,o,i)}function x(n,t){var r=t.length;t.forEach(function(t,e){t.addEventListener("click",function(){p(n,r,e,t)}),s(t,"tg-sort-header")})}var T=1,N=-1,E="tg-sort-asc",L="tg-sort-desc";return function(t){var e=n.getElementById(t),o=r(e,"tr"),i=o.length>0?r(o[0],"td"):[];0==i.length&&(i=r(o[0],"th"));for(var u=1;u<o.length;++u){var a=r(o[u],"td");if(a.length!=i.length)return}x(e,i)}}(document);document.addEventListener("DOMContentLoaded",function(n){TgTableSort("tg-rL0ce")});</script>
+								</div>
+							</div>
+						</div>
+
+						<!-- Raumsuche -->
+						<div class="tab-pane fade in" id="freeRoom">
+
+							<div class="searchContainer">
+								<div class="subContainer">
+									<form action="https://suche.wiai.de/search/search" method="post" class="form-horizontal">
+										<fieldset>
+											<div class="searchTextContainer">
+												<div class="row-fluid equalizeRoomRow1">
+													<div class="search_when span6 well searchCriteriaBox" style="min-height: 140px;">
+														<h1>Wann ?</h1> 
+														<span class="input-prepend input-append date" id="freeRoom_selectDateContainer" data-date="01.07.2016" data-date-format="dd.mm.yyyy">
+															<span class="add-on" id="freeRoom_dayOfTheWeek">Freitag</span>
+															<input class="input-small" id="freeRoom_selectDate" name="selectDate" value="01.07.2016" type="text">
+															<span class="add-on"><i class="icon-th"></i></span>
+														</span>
+												 		ab 
+											 			<span class="input-append bootstrap-timepicker-component">
+											 				<span class="input-append">
+											 					<input class="input-mini" name="selectStartingTime" id="freeRoom_selectStartingTime" type="text">
+											 					<span class="add-on">
+											 						<i class="icon-time"></i>
+																</span>
+															</span>
+														</span>
+													</div>
+													<div class="search_what span6 well searchCriteriaBox" style="min-height: 140px;">
+														<h1>Was?</h1>
+														<select id="freeRoom_selectLocationType" name="selectLocationType">
+														<option value="Room">Raum</option>
+														<option value="Pool">PC-Pool</option>
+														<option value="LectureHall">Hörsaal</option>
+														</select>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="search_where span6 well searchCriteriaBox">
+														<h1>Wo?</h1>
+														<select id="freeRoom_selectRoomGroup" name="selectRoomGroup">
+														<option value="1">auf der Erba</option>
+														<option value="2">an der Feki</option>
+														<option value="3">in der Innenstadt</option>
+														<option value="4">in dem Markushaus</option>
+														<option value="5">an der Wilhelmspost</option>
+														</select>
+													</div>
+													<div class="search_for span6 well searchCriteriaBox">
+														<h1>Für?</h1><input id="freeRoom_selectCapacity" class="input-mini" type="number" value="2" min="1" max="9999" name="selectCapacity" size="5" pattern="\d*"> Personen
+													</div>
+												</div>
+											</div>
+										</fieldset>
+									
+									<div class="submitSearchContainer">
+										<input onclick="return false" type="button" value="Raumsuche jetzt starten" id="freeRoom_submitRoomSearch" class="btn btn-primary btn-large">
+									</div>
+								</form>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer" role="contentinfo" id="silver">
+		<div class="container">
+			<div id="footer_icons">
+			<!-- 
+				<a href="http://www.uni-bamberg.de">
+				<img src="/static/images/footer/uniba.png" alt="Universit&amp;auml;t Bamberg" class="footerImg" />
+				</a>
+			-->
+				<a href="http://www.wiai.de/"><img src="include/fswiai.png" alt="Fachschaft WIAI" class="footerImg"></a></div>
+			<div id="footer_topversion">
+				<a href="#">zum Seitenanfang</a>
+			</div>
+			<div id="footer_notes">
+				<div class="centered">
+					Ein Service der Fachschaft WIAI
+					<br>
+					<span id="footer_links">
+						<a href="#">Impressum</a> &nbsp; ⋄ &nbsp;
+						<a href="#">Statistik</a> &nbsp; ⋄ &nbsp;
+						<a href="#">Kontakt</a> &nbsp; ⋄ &nbsp;
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="include/bundle-roofis-ui_defer.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$('#tabbedSearch a').click(function (e) {
+  			$(this).tab('show');
+		});
+
+		$('.entry').hover(function (e) {
+  			$(this).find('.delete_icon').fadeIn();
+		},
+		function (e) {
+  			$(this).find('.delete_icon').hide();
+		}
+		);
+
+		$('table button').click(function (e) {
+  			window.location = "index2.html";
+		});
+
+
+    	$('[data-toggle="popover"]').popover();
+
+    	$('.delete_icon').click(function (e) {
+  			$(this).parent().fadeOut();
+		});
+		
+		$('#share_link').click(function (e) {
+  			$('#copy_link').click(function (e) {
+	  			$(this).find('i').fadeIn();
+			});
+		});
+
+	</script>
+</body>
+</html> 
