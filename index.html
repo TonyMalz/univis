@@ -391,7 +391,7 @@
 
 							<div class="searchContainer">
 								<div class="subContainer">
-									<form action="https://suche.wiai.de/search/search" method="post" class="form-horizontal">
+									<form action="javascript:false;" method="get" class="form-horizontal">
 										<fieldset>
 											<div class="searchTextContainer">
 												<div class="row-fluid equalizeRoomRow1">
@@ -440,11 +440,161 @@
 										</fieldset>
 									
 									<div class="submitSearchContainer">
-										<input onclick="return false" type="button" value="Raumsuche jetzt starten" id="freeRoom_submitRoomSearch" class="btn btn-primary btn-large">
+										<button data-toggle="collapse" data-target="#freeRoom_resultsContainer"  value="Raumsuche jetzt starten" class="btn btn-primary btn-large">Raumsuche jetzt starten</button>
 									</div>
 								</form>
 								</div>
 							</div>
+
+							<div id="freeRoom_resultsContainer" class="collapse">
+								<div id="freeRoom_hiddensearchresults" class="hidden"></div>
+								<div id="freeRoom_results" class="results" style="display: block;">
+									<div id="freeRoom_spinner" class="spinner" style="display: none; opacity: 1;">
+										<div id="freeRoom_updateProgressContainer" class="progressContainer progress progress-striped active">
+											<div id="freeRoom_updateProgress" class="bar" style="width: 100%;"></div>
+										</div>
+										<h3 id="freeRoom_updateProgressDesc">Aufbereitung der Ergebnisse</h3>
+									</div>
+									<div id="freeRoom_searchresults" class="searchresults" style="opacity: 1; display: block;">
+
+							<input type="hidden" name="responseRequestId" value="2" id="responseRequestId">
+							<h2 style="padding-left: 1em;">Freie Räume:</h2>
+
+							<table class="table table-striped table-hover" style="border: 0;">
+								<thead>
+									<tr>
+										<th style="margin-left:2em;" class="sortable"><a href="/search/ajaxSearch?selectRoomGroup=1&amp;selectLocationType=Room&amp;selectCapacity=2&amp;selectDate=07.07.2016&amp;selectStartingTime=10%3A00&amp;ajaxRequestId=2p&amp;pid=search14678788425112303_freeRoom&amp;sort=toString%28%29&amp;order=asc" onclick="startAjaxRequest(false, 'freeRoom_');jQuery.ajax({type:'POST',data:{'selectRoomGroup': '1','selectLocationType': 'Room','selectCapacity': '2','selectDate': '07.07.2016','selectStartingTime': '10:00','ajaxRequestId': '2p','pid': 'search14678788425112303_freeRoom','sort': 'toString()','order': 'asc'}, url:'/search/ajaxSearch',success:function(data,textStatus){jQuery('#freeRoom_hiddensearchresults').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults('freeRoom_')}});return false;" title="Raum" style="margin-left:2em;" action="ajaxSearch">Raum</a>
+							                </th>
+										<th class="sortable"><a href="/search/ajaxSearch?selectRoomGroup=1&amp;selectLocationType=Room&amp;selectCapacity=2&amp;selectDate=07.07.2016&amp;selectStartingTime=10%3A00&amp;ajaxRequestId=2p&amp;pid=search14678788425112303_freeRoom&amp;sort=getSimpleName%28%29&amp;order=asc" onclick="startAjaxRequest(false, 'freeRoom_');jQuery.ajax({type:'POST',data:{'selectRoomGroup': '1','selectLocationType': 'Room','selectCapacity': '2','selectDate': '07.07.2016','selectStartingTime': '10:00','ajaxRequestId': '2p','pid': 'search14678788425112303_freeRoom','sort': 'getSimpleName()','order': 'asc'}, url:'/search/ajaxSearch',success:function(data,textStatus){jQuery('#freeRoom_hiddensearchresults').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults('freeRoom_')}});return false;" title="Typ" action="ajaxSearch">Typ</a>
+							                </th>
+										<th class="nomobile sortable"><a href="/search/ajaxSearch?selectRoomGroup=1&amp;selectLocationType=Room&amp;selectCapacity=2&amp;selectDate=07.07.2016&amp;selectStartingTime=10%3A00&amp;ajaxRequestId=2p&amp;pid=search14678788425112303_freeRoom&amp;sort=building&amp;order=asc" onclick="startAjaxRequest(false, 'freeRoom_');jQuery.ajax({type:'POST',data:{'selectRoomGroup': '1','selectLocationType': 'Room','selectCapacity': '2','selectDate': '07.07.2016','selectStartingTime': '10:00','ajaxRequestId': '2p','pid': 'search14678788425112303_freeRoom','sort': 'building','order': 'asc'}, url:'/search/ajaxSearch',success:function(data,textStatus){jQuery('#freeRoom_hiddensearchresults').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults('freeRoom_')}});return false;" title="Gebäude" action="ajaxSearch" class="nomobile">Gebäude</a>
+							                </th>
+										<th class="sortable"><a href="/search/ajaxSearch?selectRoomGroup=1&amp;selectLocationType=Room&amp;selectCapacity=2&amp;selectDate=07.07.2016&amp;selectStartingTime=10%3A00&amp;ajaxRequestId=2p&amp;pid=search14678788425112303_freeRoom&amp;sort=capacity&amp;order=asc" onclick="startAjaxRequest(false, 'freeRoom_');jQuery.ajax({type:'POST',data:{'selectRoomGroup': '1','selectLocationType': 'Room','selectCapacity': '2','selectDate': '07.07.2016','selectStartingTime': '10:00','ajaxRequestId': '2p','pid': 'search14678788425112303_freeRoom','sort': 'capacity','order': 'asc'}, url:'/search/ajaxSearch',success:function(data,textStatus){jQuery('#freeRoom_hiddensearchresults').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults('freeRoom_')}});return false;" title="Plätze" action="ajaxSearch">Plätze</a>
+							                </th>
+										<th class="sortable"><a href="/search/ajaxSearch?selectRoomGroup=1&amp;selectLocationType=Room&amp;selectCapacity=2&amp;selectDate=07.07.2016&amp;selectStartingTime=10%3A00&amp;ajaxRequestId=2p&amp;pid=search14678788425112303_freeRoom&amp;sort=nextAllocation&amp;order=asc" onclick="startAjaxRequest(false, 'freeRoom_');jQuery.ajax({type:'POST',data:{'selectRoomGroup': '1','selectLocationType': 'Room','selectCapacity': '2','selectDate': '07.07.2016','selectStartingTime': '10:00','ajaxRequestId': '2p','pid': 'search14678788425112303_freeRoom','sort': 'nextAllocation','order': 'asc'}, url:'/search/ajaxSearch',success:function(data,textStatus){jQuery('#freeRoom_hiddensearchresults').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){parseResults('freeRoom_')}});return false;" title="Frei" action="ajaxSearch">Frei</a>
+							                </th>
+										<!--
+										<th>Aktionen</th>
+										-->
+									</tr>
+								</thead>
+								<tbody>
+									
+										<tr>
+											<td style="padding-left: 2em;">
+												
+												
+													WE5/02.068
+												
+											</td>
+											<td>
+											
+												Raum
+											</td>
+											<td class="nomobile">
+												WE5 - Erba
+											</td>
+											<td>
+												20
+											</td>
+											<td>
+												
+													<i class="icon-ok" style="margin: auto;"></i>
+												
+											</td>
+											<!--
+											<td>Fehler melden ...</td>
+											-->
+										</tr>
+									
+										<tr>
+											<td style="padding-left: 2em;">
+												
+													WE5/00.043
+												
+											</td>
+											<td>
+											
+												Raum
+											</td>
+											<td class="nomobile">
+												WE5 - Erba
+											</td>
+											<td>
+												50
+											</td>
+											<td>
+												
+													<i class="icon-ok" style="margin: auto;"></i>
+												
+											</td>
+											<!--
+											<td>Fehler melden ...</td>
+											-->
+										</tr>
+									
+										<tr>
+											<td style="padding-left: 2em;">
+												
+													WE5/02.004
+												
+											</td>
+											<td>
+											
+												Raum
+											</td>
+											<td class="nomobile">
+												WE5 - Erba
+											</td>
+											<td>
+												60
+											</td>
+											<td>
+												
+													bis 12:00 Uhr
+												
+											</td>
+											<!--
+											<td>Fehler melden ...</td>
+											-->
+										</tr>
+									
+										<tr>
+											<td style="padding-left: 2em;">
+												
+													WE5/02.003
+												
+											</td>
+											<td>
+											
+												Raum
+											</td>
+											<td class="nomobile">
+												WE5 - Erba
+											</td>
+											<td>
+												24
+											</td>
+											<td>
+												
+													bis 14:00 Uhr
+												
+											</td>
+											<!--
+											<td>Fehler melden ...</td>
+											-->
+										</tr>
+									
+								</tbody>
+							</table>
+
+
+							</div>
+								</div>
+							</div>
+
+
+
 
 						</div>
 					</div>
