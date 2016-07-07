@@ -13,7 +13,7 @@
 }
 
 .entry {
-	border: 1px solid rgba(0, 0, 0, 0.28);
+	border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 
     padding-left: 8px;
@@ -129,4 +129,23 @@
 
 .kursgrp > div:last-child {
 	border-bottom: 1px solid #e4e4e4;
+}
+
+.ch {
+	color: rgba(0,0,0,0.35);
+}
+.ch:hover {
+	color: rgba(0,0,0,1);
+}
+
+.ghost {
+
+	display: none;
+	border: none;
+	background: repeating-linear-gradient(45deg,
+		rgba(96,109,188,0.2),
+		rgba(96,109,188,0.2) 10px,
+		rgba(70, 82, 152, 0.2) 10px,
+		rgba(70, 82, 152, 0.2) 20px  );
+	color: rgba(0,0,0,0.5);
 }
