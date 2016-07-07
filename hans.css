@@ -68,6 +68,12 @@
 	white-space: nowrap;
 }
 
+#tg-MUT9V button {
+	padding: 0;
+	border: none;
+	background: none;
+}
+
 
 .modulbtn {
 	min-width: 120px;
