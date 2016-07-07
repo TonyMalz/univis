@@ -72,12 +72,12 @@
 										    	 	<div class="span2">info</div>
 										    	 </div>
 										    	 <div class="row v">
-										    	 	<div class="span3 offset1">Di. 12<sup>15</sup> - 13<sup>45</sup></div>
+										    	 	<div class="span3 offset1">Di. 08<sup>15</sup> - 09<sup>45</sup></div>
 										    	 	<div class="span4">Vorlesung</div>
 										    	 	<div class="span3"><button id="c1" type="submit" class="btn btn-small btn-success"> hinzuf&uuml;gen <i class="icon-plus-sign icon-white"></i> </button></div>
 										    	 </div>
 										    	 <div class="row u">
-										    	 	<div class="span3 offset1">Di. 10<sup>15</sup> - 11<sup>45</sup></div>
+										    	 	<div class="span3 offset1">Mi. 12<sup>15</sup> - 13<sup>45</sup></div>
 										    	 	<div class="span4">&Uuml;bung</div>
 										    	 	<div class="span3"><button id="c2" type="submit" class="btn btn-small btn-success"> hinzuf&uuml;gen <i class="icon-plus-sign icon-white"></i> </button></div>
 										    	 </div>
@@ -377,7 +377,7 @@
 										        	</div>
 										        </td>
 										        <td>
-										        	<div id="e1" class="entry c3  ghost">
+										        	<div id="e1" class="entry c4  ghost">
 										        		<span class="course">MFI II</span><br>
 										        		<span class="location">Vorlesung <br> WE 01.019</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
@@ -413,7 +413,7 @@
 										        		</div>
 										        	</div></td>
 										        <td>
-										        	<div id="e2" class="entry c3  ghost">
+										        	<div id="e2" class="entry c4  ghost">
 										        		<span class="course">MFI II</span><br>
 										        		<span class="location">&Uuml;bung <br> WE 01.019</span>
 										        		<div class="delete_icon"><img src="include/images/delete1.png"></div>
@@ -777,20 +777,32 @@
   			$(this).find('i').toggleClass("icon-chevron-down").toggleClass("icon-chevron-up");
 		});
 
+		var clicked1=false;
 		$( "#c1" )
 		  .mouseover(function() {
 		    $( "#e1" ).show();
 		  })
 		  .mouseout(function() {
-		    $( "#e1" ).hide();
+		  	if (!clicked1) 
+		    	$( "#e1" ).hide();
+		  })
+		  .click(function() {
+		    $( "#e1" ).removeClass("ghost");
+		    clicked1 = true;
 		  });
 
+		var clicked2=false;
 		$( "#c2" )
 		  .mouseover(function() {
 		    $( "#e2" ).show();
 		  })
 		  .mouseout(function() {
-		    $( "#e2" ).hide();
+		  	if (!clicked2) 
+		    	$( "#e2" ).hide();
+		  })
+		  .click(function() {
+		    $( "#e2" ).removeClass("ghost");
+		    clicked2 = true;
 		  });
 
 	</script>
