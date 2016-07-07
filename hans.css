@@ -74,6 +74,10 @@
 	background: none;
 }
 
+#tg-MUT9V tr th {
+	background: #B6DDF0;
+}
+
 #tg-MUT9V tr:nth-child(even) td{
 	padding: 4px;
 }
